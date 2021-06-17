@@ -40,6 +40,6 @@ struct Test: Decodable, Identifiable {
 struct Question: Decodable, Identifiable {
     var id: Int
     var content: String
-    var correctIndex: String
+    var correctIndex: Int
     var answers: [String]
 }

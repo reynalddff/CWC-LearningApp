@@ -4,43 +4,15 @@
 //
 //  Created by Reynald Daffa Pahlevi on 09/06/21.
 //
-
-//import Foundation
-//
-//class ContentModel: ObservableObject{
-//    @Published var modules = [Module]()
-//
-//    init () {
-//        getLocalData()
-//    }
-//
-//
-//    func getLocalData() {
-//
-//        let jsonUrl = Bundle.main.url(forResource: "data", withExtension: "json")
-//
-//        do {
-//            let jsonData = try Data(contentsOf: jsonUrl!)
-//
-//            let jsonDecoder = JSONDecoder()
-//            let modules = try jsonDecoder.decode([Module].self, from: jsonData)
-//
-//            self.modules = modules
-//
-//        } catch {
-//            print("Couldn't parse local data")
-//        }
-//
-//
-//
-//    }
-//}
-
 import Foundation
 
 class ContentModel: ObservableObject {
     
+    // List of modules
     @Published var modules = [Module]()
+    
+    @Published var currentModule: Module?
+    var currentModuleIndex = 0
     
     var styleData: Data?
     
@@ -49,6 +21,8 @@ class ContentModel: ObservableObject {
         getLocalData()
         
     }
+    
+    //MARK: - Data methods
     
     func getLocalData() {
         
@@ -87,5 +61,19 @@ class ContentModel: ObservableObject {
         }
         
     }
+    
+    //MARK: - Module navigation methods
+    func beginModule(_ moduleId: Int) {
+        for index in 0..<modules.count {
+            if modules[index].id == moduleId {
+                currentModuleIndex = index
+                break
+            }
+        }
+        
+        currentModule = modules[currentModuleIndex]
+    }
+    
+
 }
 
