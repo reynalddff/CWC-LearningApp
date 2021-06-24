@@ -40,7 +40,7 @@ struct ContentViewRow: View {
             }
             .padding()
         }
-        .padding(.bottom, 8.0)
+        .padding(.bottom, 4.0)
         
     }
 }

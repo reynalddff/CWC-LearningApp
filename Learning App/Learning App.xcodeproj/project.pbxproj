@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C2CB7F82683607600940838 /* CodeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2CB7F72683607600940838 /* CodeTextView.swift */; };
 		1C3B0B9126720808009C3190 /* HomeViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3B0B9026720808009C3190 /* HomeViewRow.swift */; };
 		1C3B0B9326720D3B009C3190 /* ContentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3B0B9226720D3B009C3190 /* ContentListView.swift */; };
 		1CA3F8262670F912002ABE36 /* Learning_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA3F8252670F912002ABE36 /* Learning_App.swift */; };
@@ -17,10 +18,15 @@
 		1CA3F83D2670FF5E002ABE36 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 1CA3F83B2670FF5E002ABE36 /* data.json */; };
 		1CA3F83E2670FF5E002ABE36 /* style.html in Resources */ = {isa = PBXBuildFile; fileRef = 1CA3F83C2670FF5E002ABE36 /* style.html */; };
 		1CA3F8452671025E002ABE36 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA3F8442671025E002ABE36 /* Model.swift */; };
+		1CAB7703267AFDB3001908CE /* ContentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAB7702267AFDB3001908CE /* ContentDetailView.swift */; };
+		1CAB7706267B0104001908CE /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CAB7705267B0104001908CE /* AVKit.framework */; };
+		1CAB7708267B03BC001908CE /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAB7707267B03BC001908CE /* Constant.swift */; };
 		1CBDF3802673409100E18655 /* ContentViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBDF37F2673409100E18655 /* ContentViewRow.swift */; };
+		1CD2E3D62684E2C700D5F862 /* RectangleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD2E3D52684E2C700D5F862 /* RectangleCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C2CB7F72683607600940838 /* CodeTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTextView.swift; sourceTree = "<group>"; };
 		1C3B0B9026720808009C3190 /* HomeViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRow.swift; sourceTree = "<group>"; };
 		1C3B0B9226720D3B009C3190 /* ContentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentListView.swift; sourceTree = "<group>"; };
 		1CA3F8222670F912002ABE36 /* Learning App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Learning App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,7 +39,11 @@
 		1CA3F83B2670FF5E002ABE36 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		1CA3F83C2670FF5E002ABE36 /* style.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = style.html; sourceTree = "<group>"; };
 		1CA3F8442671025E002ABE36 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		1CAB7702267AFDB3001908CE /* ContentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailView.swift; sourceTree = "<group>"; };
+		1CAB7705267B0104001908CE /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		1CAB7707267B03BC001908CE /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		1CBDF37F2673409100E18655 /* ContentViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewRow.swift; sourceTree = "<group>"; };
+		1CD2E3D52684E2C700D5F862 /* RectangleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CAB7706267B0104001908CE /* AVKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +63,7 @@
 			children = (
 				1CA3F8242670F912002ABE36 /* Learning App */,
 				1CA3F8232670F912002ABE36 /* Products */,
+				1CAB7704267B0104001908CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +106,9 @@
 				1C3B0B9026720808009C3190 /* HomeViewRow.swift */,
 				1C3B0B9226720D3B009C3190 /* ContentListView.swift */,
 				1CBDF37F2673409100E18655 /* ContentViewRow.swift */,
+				1CAB7702267AFDB3001908CE /* ContentDetailView.swift */,
+				1C2CB7F72683607600940838 /* CodeTextView.swift */,
+				1CD2E3D52684E2C700D5F862 /* RectangleCard.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -111,6 +126,7 @@
 			children = (
 				1CA3F83B2670FF5E002ABE36 /* data.json */,
 				1CA3F83C2670FF5E002ABE36 /* style.html */,
+				1CAB7707267B03BC001908CE /* Constant.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -128,6 +144,14 @@
 			children = (
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1CAB7704267B0104001908CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CAB7705267B0104001908CE /* AVKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,10 +227,14 @@
 			files = (
 				1C3B0B9326720D3B009C3190 /* ContentListView.swift in Sources */,
 				1CBDF3802673409100E18655 /* ContentViewRow.swift in Sources */,
+				1CAB7708267B03BC001908CE /* Constant.swift in Sources */,
 				1CA3F8282670F912002ABE36 /* HomeView.swift in Sources */,
+				1CAB7703267AFDB3001908CE /* ContentDetailView.swift in Sources */,
 				1C3B0B9126720808009C3190 /* HomeViewRow.swift in Sources */,
+				1C2CB7F82683607600940838 /* CodeTextView.swift in Sources */,
 				1CA3F8262670F912002ABE36 /* Learning_App.swift in Sources */,
 				1CA3F83A2670FB05002ABE36 /* ContentModel.swift in Sources */,
+				1CD2E3D62684E2C700D5F862 /* RectangleCard.swift in Sources */,
 				1CA3F8452671025E002ABE36 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

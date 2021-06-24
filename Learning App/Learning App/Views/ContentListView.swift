@@ -16,40 +16,20 @@ struct ContentListView: View {
                     
                     if model.currentModule != nil {
                         ForEach(0..<model.currentModule!.content.lessons.count){ index in
-                            ContentViewRow(index: index)
-//                            ZStack(alignment:.leading){
-//                                Rectangle()
-//                                    .foregroundColor(.white)
-//                                    .cornerRadius(10)
-//                                    .shadow(radius: 5)
-//                                    .frame(height: 66)
-//
-//                                HStack(spacing: 30){
-//                                    // list of number lesson
-//                                    Text(String((model.currentModule!.content.lessons[index].id)))
-//                                        .font(.title3)
-//                                        .fontWeight(.medium)
-//                                        .multilineTextAlignment(.leading)
-//
-//
-//                                    VStack(alignment: .leading, spacing: 4){
-//                                        // Title lesson
-//                                        Text(model.currentModule!.content.lessons[index].title)
-//                                            .font(.headline)
-//                                            .fontWeight(.bold)
-//                                        Text("Video - \(model.currentModule!.content.lessons[index].duration)")
-//                                            .font(.subheadline)
-//                                            .fontWeight(.regular)
-//                                    }
-//                                }
-//                                .padding()
-//                            }
-//                            .padding(.bottom, 8.0)
+                            NavigationLink(
+                                destination: ContentDetailView()
+                                    .onAppear(perform: {
+                                        model.beginLesson(index)
+                                    }),
+                                label: {
+                                    ContentViewRow(index: index)
+                                })
                         }
                     }
                 }
+                .accentColor(.black)
                 .padding()
-                .navigationTitle("Learn Swift")
+                .navigationTitle("Learn \(model.currentModule?.category ?? "")")
             }
         }
     }
